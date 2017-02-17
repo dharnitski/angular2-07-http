@@ -9,6 +9,7 @@ import { Response } from '@angular/http';
 })
 export class AppComponent implements OnInit {
   items: any[] = [];
+  asyncString = this.httpService.getData();
 
   constructor(private httpService: HttpService) { }
 
