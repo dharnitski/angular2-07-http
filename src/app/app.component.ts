@@ -13,7 +13,7 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.httpService.getData()
       .subscribe(
-      (data: Response) => console.log(data)
+      (data: any) => console.log(data)
       );
   }
 
